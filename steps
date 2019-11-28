@@ -1,0 +1,12 @@
+kubectl get all --namespace nginx-ingress
+kubectl apply -f hotel-ingress.yml [hotelingress.yml]
+kubectl get ns
+kubectl get all --namespace hotel
+kubectl get ingress --namespace hotel
+kubectl describe ing hotel-ingress --namespace hotel
+kubectl get pods -o wide --namespace hotel
+kubectl apply -f cage-ingress.yml [cafe-new.yml]
+kubectl get ns
+kubectl get all --namespace cafe
+kubectl get ing --namespace cafe
+kubectl describe ing cafe-ingress --namespace cafe
